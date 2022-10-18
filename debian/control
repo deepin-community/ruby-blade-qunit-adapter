@@ -1,0 +1,26 @@
+Source: ruby-blade-qunit-adapter
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Build-Depends: debhelper (>= 11~),
+               gem2deb
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-blade-qunit-adapter.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-blade-qunit-adapter
+Homepage: https://github.com/javan/blade-qunit_adapter
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-blade-qunit-adapter
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends}
+Description: Blade adapter for the QUnit JavaScript testing framework
+ This is a blade adapter for QUnit JS testing framework.
+ .
+ QUnit is a powerful, easy-to-use JavaScript unit testing framework. It's used
+ by the jQuery, jQuery UI and jQuery Mobile projects and is capable of testing
+ any generic JavaScript code, including itself.
